@@ -7,14 +7,15 @@
 <div class="form-check">
 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" [(ngModel)] = "option">
 <label class="form-check-label" for="exampleRadios1">
-  Default radio
+  Juros Simples
 </label>
 </div>
 <div class="form-check">
 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" [(ngModel)] = "option">
 <label class="form-check-label" for="exampleRadios2">
-  Second default radio
+  Juros Compostos
 </label>
 </div>
+<div>Opção: {{option}}</div>
 </div>
-<div>{{option}}</div>
+<div *ngIf="option == '1'"></div>
