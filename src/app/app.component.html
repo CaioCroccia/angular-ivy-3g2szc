@@ -5,17 +5,17 @@
 </nav>
 <div>
 <div class="form-check">
-<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" [value]="1" [(ngModel)]="option" />
+<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" [value]='1' [(ngModel)]="option" />
 <label class="form-check-label" for="exampleRadios1">
   Juros Simples
 </label>
 </div>
 <div class="form-check">
-<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" [value]="2" [(ngModel)]="option" />
+<input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" [value]='2' [(ngModel)]="option" />
 <label class="form-check-label" for="exampleRadios2">
   Juros Compostos
 </label>
 </div>
 </div>
-<div *ngIf="option == '1'">1</div>
-<div *ngIf="option == '2'">1</div>
+<div *ngIf="option == '1'">Juros Simples</div>
+<div *ngIf="option == '2'">Juros Compostos</div>
